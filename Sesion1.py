@@ -15,7 +15,8 @@ if 1 <= n <= 100:
         print("Weird")
     elif (n % 2 == 0 and 2 <= n <= 5) or (n % 2 == 0 and n > 20):
         print("Not Weird")
-print("---------------------------------------------------------------------------------------")
+
+print("==================================================================================================")
 
 # EJERCICIO 2 (Loops)
 
@@ -36,6 +37,21 @@ lista = list(range(n))
 for integer in lista:
     print(pow(integer, 2))
 
+print("==================================================================================================")
 
 
+# EJERCICIO 3 ()
+# Dado un año, determine si es un año bisiesto.
+# Si es un año bisiesto, devuelve el valor booleano True, de lo contrario, devuelve False.
 
+def is_leap(year):
+    leap = False
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        leap = True
+    return leap
+
+
+year = int(input())
+print(is_leap(year))
+
+print("==================================================================================================")
