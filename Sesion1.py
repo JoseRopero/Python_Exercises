@@ -40,7 +40,8 @@ for integer in lista:
 print("==================================================================================================")
 
 
-# EJERCICIO 3 ()
+# EJERCICIO 3 (Write a function)
+
 # Dado un año, determine si es un año bisiesto.
 # Si es un año bisiesto, devuelve el valor booleano True, de lo contrario, devuelve False.
 
@@ -55,3 +56,18 @@ year = int(input())
 print(is_leap(year))
 
 print("==================================================================================================")
+
+# EJERCICIO 4 (Print a function)
+
+# El código leerá un número entero n.
+# Sin utilizar ningún método de cadena, intente imprimir lo siguiente: 1234...n
+# Restricciones 1 < n < 150
+# Imprime la lista de enteros como una cadena, sin espacios.
+
+n = int(input())
+if 1 <= n <= 150:
+    lista = list(range(1, n + 1))
+    cadena = ""
+    for num in lista:
+        cadena += str(num)
+    print(cadena)
