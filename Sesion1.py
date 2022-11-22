@@ -71,3 +71,18 @@ if 1 <= n <= 150:
     for num in lista:
         cadena += str(num)
     print(cadena)
+
+print("==================================================================================================")
+
+# EJERCICIO 5 (List comprehensions)
+
+# Nos dan tres enteros (x, y, z) representando las dimensiones de un paralelepípedo, junto con un número entero n.
+# Imprima una lista de todas las coordenadas posibles dadas por [i, j, k] en una cuadrícula 3D, donde la suma de
+# i + j + k no sea igual a n.
+
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+lista_nueva = [[i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i+j+k != n]
+print(lista_nueva)
