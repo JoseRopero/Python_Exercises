@@ -4,9 +4,9 @@
 # debe encontrar el puntaje del subcampeón.
 # Te dan 'n' puntuaciones. Guárdalos en una lista y encuentra la puntuación del subcampeón.
 
-# La primera línea contiene 'n' que es el numero de puntuajes que habra en la lista.
+# La primera línea contiene 'n' que es el número de puntuajes que habrá en la lista.
 # La segunda línea contiene una matriz A[] de números enteros separados por un espacio.
-# Imprime la puntuacion del subcampeon.
+# Imprime la puntuación del subcampeón.
 
 n = int(input())
 arr = map(int, input().split())
